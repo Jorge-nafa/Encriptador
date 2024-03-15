@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header> 
+            <h1 class="titulo"> <img src="imagenes/Logo.png" alt="logo" class="logo">Encriptador</h1>
+
+        </header>
+        <main>
+            <seccion>
+                <textarea id="texto-encriptado" class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="informacion">&#9888  Solo letras minusculas y sin acento</h6>
+                </div>
+                <div class="botones">
+                    <button onclick="btnEncriptar();" class="boton-encriptar">Encriptar</button>
+                    <button onclick="btnDesencriptar();" class="boton-desencriptar">Desencriptar</button>
+                </div>
+            </seccion>
+
+            <seccion>
+                <textarea id="texto-desencriptado" class="Mensaje" cols="20" rows="12"></textarea>
+                <h5 class="titulo-no-encontrado"></h5>
+                <p class="parrafo"></p>
+                <div>
+                    <button onclick="copiar();" class="boton-copiar">Copiar</button>
+                </div>
+
+            </seccion>
+
+        </main>
+        <script src="encriptador.js" defer></script>
+    </body>
+</html>

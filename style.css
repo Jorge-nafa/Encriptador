@@ -1,0 +1,149 @@
+*{
+    background: rgba(243, 245, 252, 1);
+    
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.titulo{
+    color: rgba(10, 56, 113, 1) ;
+    font-size: 50px;
+    
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+    margin: 20px 0 0 40px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
+
+.text-area{
+    border: none;
+    color: rgba(10, 56, 113, 1);
+    margin-top: 40px;
+    
+}
+
+::placeholder{color:rgba(10, 56, 113, 1); }
+
+.text-area:focus{
+    outline: none;
+}
+
+.Mensaje{
+  /*  background: white;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;  para que no se repita la imagen
+    background-position-x:20px ;
+    background-position-y: 50px ; */
+    border: none;
+    border-radius: 24px;
+    color: rgba(10, 56, 113, 1);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+
+.Mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin:18px ;
+}
+
+.boton-desencriptar{
+    background:rgba(255, 255, 255, 0.627); 
+    border-radius: 25px;
+    color: rgba(10, 56, 113, 1) ;
+    cursor: pointer;
+    border: 1px solid rgba(10, 56, 113, 1);
+    margin-left: 30px;
+    width: 328px;
+    height: 67px;
+}
+
+.boton-encriptar{
+    background: rgba(10, 56, 113, 1);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    width: 328px;
+    height: 67px;
+}
+
+.informacion{
+    margin: 0 0 0 30px;
+    font-size: 13px;
+    color: black;
+}
+
+.boton-copiar{
+    margin: 520px 0 0 118px;
+    color:rgba(10, 56, 120, 1) ;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    width: 328px;
+    height: 60px;
+    position: fixed;
+}
+
+.titulo-no-encontrado{
+    color:rgba(10, 56, 113, 1) ;   
+    background: none;
+    margin: 370px 0 0 150px;
+    width: 20%;
+    font-size: 42%;
+    font-weight: bold;
+    position: fixed;
+}
+.parrafo{
+    color:rgb(102, 152, 213) ;   
+    background: none;
+    margin: 405px 0 0 160px;
+    width: 20%;
+    font-size: 35%;
+    position: fixed;
+}
+
+button:hover{
+    transform: scale(1.09);  
+    transition: .3s;
+}
+button:active{
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0s;
+}
+
+@media screen and (max-width:1030px){
+    main{
+        display: inline;
+    }
+    .Mensaje{
+        position: static;
+        width: 100%;
+        margin: auto;
+    }
+    .boton-copiar{
+        position: static;
+        margin: auto;
+        width: 100%;
+    }
+    .boton-desencriptar,.boton-encriptar{
+        width: 49%;
+    }
+
+}
+
+    
